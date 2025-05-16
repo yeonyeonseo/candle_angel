@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>양초 천사 상담소</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 첫 화면 -->
+  <div id="welcome-section">
+    <h1>양초 천사 소환소</h1>
+    <button onclick="summonAngel()">양초 천사 소환하기</button>
+  </div>
+
+  <!-- 상담 화면 -->
+  <div id="counsel-section" style="display:none;">
+    <h1>양초 천사 상담소</h1>
+
+    <div id="candle">
+      <img id="flame" src="lottie/flame.gif" alt="불꽃">
+      <div id="candle-body"></div>
+    </div>
+
+    <textarea id="user-input" placeholder="당신의 고민을 적어주세요..."></textarea>
+    <br>
+    <button onclick="sendToAngel()">천사에게 고민 보내기</button>
+
+    <div class="control-buttons">
+      <button onclick="save()">저장</button>
+      <button onclick="speak()">읽어줘</button>
+    </div>
+
+    <div id="response"></div>
+
+    <audio id="bgm" src="bgm.mp3" loop autoplay></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
