@@ -68,3 +68,14 @@ function summonAngel() {
   document.getElementById("welcome-section").style.display = "none";
   document.getElementById("counsel-section").style.display = "block";
 }
+particlesJS("particles-js", {
+  particles: {
+    number: { value: 40, density: { enable: true, value_area: 800 } },
+    color: { value: "#fff0cc" },
+    opacity: { value: 0.2, random: true },
+    size: { value: 3, random: true },
+    move: { enable: true, speed: 0.6 }
+  },
+  interactivity: { detect_on: "canvas", events: { onhover: { enable: false } } },
+  retina_detect: true
+});
