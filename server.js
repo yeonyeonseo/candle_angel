@@ -4,12 +4,14 @@ const dotenv = require("dotenv");
 const path = require("path");
 
 dotenv.config();
-const app = express();
-const port = 3000;
+
 if (!process.env.OPENAI_API_KEY) {
   console.error("❌ .env 파일에 OPENAI_API_KEY가 없습니다!");
   process.exit(1);
 }
+
+const app = express();
+const port = 3000;
 
 app.use(express.static("public"));
 app.use(express.json());
@@ -37,8 +39,6 @@ app.post("/ask", async (req, res) => {
     res.status(500).json({ reply: "오류가 발생했습니다. 나중에 다시 시도해 주세요." });
   }
 });
-
-const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
   console.log(`🕯️ 양초 천사 서버 실행 중: http://localhost:${port}`);
