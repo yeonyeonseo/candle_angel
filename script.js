@@ -78,7 +78,7 @@ particlesJS("particles-js", {
       random: true
     },
     size: {
-      value: 1.2,
+      value: 0.2,
       random: true
     },
     move: {
