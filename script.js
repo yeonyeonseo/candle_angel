@@ -74,7 +74,7 @@ particlesJS("particles-js", {
     color: { value: "#fff8dd" },
     shape: { type: "circle" },
     opacity: {
-      value: 0.1,
+      value: 0.2,
       random: true
     },
     size: {
