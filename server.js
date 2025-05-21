@@ -13,7 +13,7 @@ if (!process.env.OPENAI_API_KEY) {
 const app = express();
 const port = 3000;
 
-app.use(express.static("public"));
+app.use(express.static(path.join(__dirname)));
 app.use(express.json());
 
 const openai = new OpenAI({
