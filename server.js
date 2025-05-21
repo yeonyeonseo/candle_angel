@@ -6,6 +6,10 @@ const path = require("path");
 dotenv.config();
 const app = express();
 const port = 3000;
+if (!process.env.OPENAI_API_KEY) {
+  console.error("❌ .env 파일에 OPENAI_API_KEY가 없습니다!");
+  process.exit(1);
+}
 
 app.use(express.static("public"));
 app.use(express.json());
@@ -34,10 +38,8 @@ app.post("/ask", async (req, res) => {
   }
 });
 
-app.listen(port, () => {
-  console.log(`Server running at http://localhost:${port}`);
-});
+const port = process.env.PORT || 3000;
 
-app.listen(80, () => {
-  console.log('서버가 켜졌습니다.')
+app.listen(port, () => {
+  console.log(`🕯️ 양초 천사 서버 실행 중: http://localhost:${port}`);
 });
