@@ -108,10 +108,24 @@ audio {
   }
 }
 #welcome-section {
-  padding-top: 100px;
+  height: 100vh;
+  background: url("소환소배경.jpg") center/cover no-repeat fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  color: #ffecc2;
+  text-align: center;
+  overflow: hidden;
 }
 
 #welcome-section button {
   font-size: 1.2em;
   padding: 15px 30px;
+}
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
 }
