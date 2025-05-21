@@ -116,3 +116,16 @@ audio {
   font-size: 1.2em;
   padding: 15px 30px;
 }
+#summon-title {
+  font-family: 'Georgia', serif;
+  font-size: 3.8em;
+  color: #fff8dd;
+  text-align: center;
+  letter-spacing: 0.1em;
+  margin-bottom: 40px;
+  text-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  z-index: 2;
+  position: relative;
+  mix-blend-mode: lighten; /* 배경에 자연스럽게 섞이게 */
+  opacity: 0.95;
+}
