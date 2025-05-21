@@ -70,12 +70,32 @@ function summonAngel() {
 }
 particlesJS("particles-js", {
   particles: {
-    number: { value: 40, density: { enable: true, value_area: 800 } },
-    color: { value: "#fff0cc" },
-    opacity: { value: 0.2, random: true },
-    size: { value: 3, random: true },
-    move: { enable: true, speed: 0.6 }
+    number: { value: 80, density: { enable: true, value_area: 1000 } },
+    color: { value: "#fff8dd" },
+    shape: { type: "circle" },
+    opacity: {
+      value: 0.1,
+      random: true
+    },
+    size: {
+      value: 1.2,
+      random: true
+    },
+    move: {
+      enable: true,
+      speed: 0.2,
+      direction: "right",
+      random: true,
+      straight: false,
+      out_mode: "out"
+    }
   },
-  interactivity: { detect_on: "canvas", events: { onhover: { enable: false } } },
+  interactivity: {
+    detect_on: "canvas",
+    events: {
+      onhover: { enable: false },
+      onclick: { enable: false }
+    }
+  },
   retina_detect: true
 });
