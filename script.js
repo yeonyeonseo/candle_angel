@@ -99,3 +99,17 @@ particlesJS("particles-js", {
   },
   retina_detect: true
 });
+function summonAngel() {
+  const flash = document.getElementById("light-flash");
+
+  // 빛나는 효과 시작
+  flash.style.opacity = "1";
+
+  setTimeout(() => {
+    // 빛이 사라지고 상담소 등장
+    flash.style.opacity = "0";
+
+    document.getElementById("welcome-section").style.display = "none";
+    document.getElementById("counsel-section").style.display = "block";
+  }, 600); // 빛나고 나서 0.6초 후 전환
+}
