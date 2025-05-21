@@ -14,25 +14,23 @@
     <div id="particles-js"></div>
   </div>
 
-<div id="counsel-section">
+<!-- 상담 화면 -->
+<div id="counsel-section" style="display:none;">
   <div id="counsel-background">
     <div id="particles-js"></div>
 
-    <h1>양초 천사 상담소</h1>
-
-    <!-- 양초 GIF -->
-    <div id="candle-container">
-      <img id="flame" src="lottie/flame.gif" alt="flame">
+    <div id="candle">
+      <img id="flame" src="lottie/flame.gif" alt="불꽃">
+      <div id="candle-body"></div>
     </div>
-
     <!-- 고민 입력창 -->
     <textarea id="user-input" placeholder="당신의 고민을 적어주세요..."></textarea>
-
+    <br>
     <!-- 보내기 버튼 -->
     <button onclick="sendToAngel()">천사에게 고민 보내기</button>
-
-    <!-- 천사 응답 출력 -->
+   <!-- 천사 응답 출력 -->
     <div id="response"></div>
+
     <audio id="bgm" src="bgm.mp3" loop autoplay></audio>
   </div>
 </div>
