@@ -31,51 +31,44 @@ h1 {
   transition: height 1s linear;
 }
 #flame {
-  width: 100px;
-  height: 170px;
-  position: absolute;
-  top: -70px;
-  left: 10px;
-  z-index: 2;
+  width: 60px;
+  height: auto;
 }
 textarea {
+  margin-top: 32vh; /* 배경 하단에 가까이 */
   width: 80%;
-  height: 150px;
-  margin-top: 20px;
-  padding: 12px;
-  font-size: 1em;
-  border-radius: 8px;
-  border: none;
-  resize: none;
-  background-color: #222;
+  height: 100px;
+  background-color: rgba(34, 34, 34, 0.9);
   color: #fff;
-  outline: none;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 15px;
+  resize: none;
 }
 button {
-  margin-top: 15px;
-  padding: 10px 25px;
-  font-size: 1em;
+  margin-top: 20px;
   background-color: #ffcc88;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
   color: #222;
-  transition: background-color 0.3s ease;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffcc88;
 }
 button:hover {
   background-color: #ffdca8;
 }
 #response {
-  margin-top: 30px;
-  font-size: 1.1em;
-  white-space: pre-line;
-  line-height: 1.5em;
-  padding: 20px;
-  background-color: #222;
-  border-radius: 10px;
+  margin-top: 20px;
   width: 80%;
-  margin-left: auto;
-  margin-right: auto;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.85);
+  color: #fff;
+  border-radius: 10px;
+  white-space: pre-line;
+  font-size: 1rem;
 }
 .control-buttons {
   margin-top: 20px;
@@ -113,12 +106,13 @@ audio {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding-top: 100px;
+  padding-top: 30vh; /* 상단 공간 확보 */
   overflow: hidden;
 }
 
+
 #candle-container {
-  margin-top: 100px; /* 얼굴을 가리지 않도록 아래로 내림 */
-  margin-bottom: 30px;
+  position: absolute;
+  top: 40vh; /* 불꽃 위치 조절 */
   z-index: 2;
 }
