@@ -11,6 +11,22 @@ h1 {
   margin-bottom: 20px;
   color: #ffe9a3;
 }
+#counsel-background {
+  position: relative;
+  min-height: 100vh;
+  background: url("background.jpg") center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 30vh; /* 상단 공간 확보 */
+  overflow: hidden;
+}
+#candle-container {
+  position: absolute;
+  top: 40vh; /* 불꽃 위치 조절 */
+  z-index: 2;
+}
 #candle {
   position: relative;
   width: 60px;
@@ -33,42 +49,49 @@ h1 {
 #flame {
   width: 60px;
   height: auto;
+  position: absolute;
+  top: -45px;
+  left: 10px;
+  z-index: 2;
 }
 textarea {
-  margin-top: 32vh; /* 배경 하단에 가까이 */
   width: 80%;
   height: 100px;
-  background-color: rgba(34, 34, 34, 0.9);
-  color: #fff;
-  border: none;
-  border-radius: 10px;
-  font-size: 1rem;
+  margin-top: 32vh; /* 배경 하단에 가까이 */
   padding: 15px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: none;
   resize: none;
+  background-color: #222;
+  color: #fff;
+  outline: none;
 }
 button {
   margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 1em;
   background-color: #ffcc88;
-  color: #222;
   border: none;
-  padding: 12px 24px;
-  border-radius: 8px;
-  font-size: 1rem;
+  border-radius: 6px;
   cursor: pointer;
-  box-shadow: 0 0 10px #ffcc88;
+  color: #222;
+  transition: background-color 0.3s ease;
 }
 button:hover {
   background-color: #ffdca8;
 }
 #response {
   margin-top: 20px;
-  width: 80%;
-  padding: 20px;
-  background-color: rgba(34, 34, 34, 0.85);
-  color: #fff;
-  border-radius: 10px;
+  font-size: 1.1em;
   white-space: pre-line;
-  font-size: 1rem;
+  line-height: 1.5em;
+  padding: 20px;
+  background-color: #222;
+  border-radius: 10px;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .control-buttons {
   margin-top: 20px;
@@ -91,28 +114,4 @@ audio {
 #welcome-section button {
   font-size: 1.2em;
   padding: 15px 30px;
-}
-#particles-js {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-}
-#counsel-background {
-  position: relative;
-  min-height: 100vh;
-  background: url("background.jpg") center/cover no-repeat fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 30vh; /* 상단 공간 확보 */
-  overflow: hidden;
-}
-
-
-#candle-container {
-  position: absolute;
-  top: 40vh; /* 불꽃 위치 조절 */
-  z-index: 2;
 }
