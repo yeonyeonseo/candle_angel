@@ -11,6 +11,67 @@ h1 {
   margin-bottom: 20px;
   color: #ffe9a3;
 }
+#counsel-background {
+  position: relative;
+  min-height: 100vh;
+  background: url("background.jpg") center/cover no-repeat fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+#candle-container {
+  margin-top: 100px; /* 얼굴을 가리지 않도록 아래로 내림 */
+  margin-bottom: 30px;
+  z-index: 2;
+}
+
+#flame {
+  width: 100px; /* 원하는 만큼 키우기 */
+  height: auto;
+}
+
+textarea {
+  width: 80%;
+  height: 120px;
+  background-color: #222;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  padding: 15px;
+  margin-bottom: 20px;
+  resize: none;
+}
+
+button {
+  background-color: #ffcc88;
+  color: #222;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px #ffcc88;
+}
+
+button:hover {
+  background-color: #ffe0aa;
+}
+
+#response {
+  margin-top: 30px;
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(34, 34, 34, 0.8);
+  color: #fff;
+  border-radius: 10px;
+  white-space: pre-line;
+  font-size: 1rem;
+}
 #candle {
   position: relative;
   width: 60px;
@@ -30,53 +91,7 @@ h1 {
   background: linear-gradient(to top, #fbeec1, #f8d479);
   transition: height 1s linear;
 }
-#flame {
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: -45px;
-  left: 10px;
-  z-index: 2;
-}
-textarea {
-  width: 80%;
-  height: 100px;
-  margin-top: 20px;
-  padding: 12px;
-  font-size: 1em;
-  border-radius: 8px;
-  border: none;
-  resize: none;
-  background-color: #222;
-  color: #fff;
-  outline: none;
-}
-button {
-  margin-top: 15px;
-  padding: 10px 25px;
-  font-size: 1em;
-  background-color: #ffcc88;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  color: #222;
-  transition: background-color 0.3s ease;
-}
-button:hover {
-  background-color: #ffdca8;
-}
-#response {
-  margin-top: 30px;
-  font-size: 1.1em;
-  white-space: pre-line;
-  line-height: 1.5em;
-  padding: 20px;
-  background-color: #222;
-  border-radius: 10px;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .control-buttons {
   margin-top: 20px;
 }
@@ -98,18 +113,6 @@ audio {
 #welcome-section button {
   font-size: 1.2em;
   padding: 15px 30px;
-}
-#counsel-background {
-  position: relative;
-  min-height: 100vh;
-  background: url("background.jpg") center/cover no-repeat fixed;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding-top: 60px;
-  overflow: hidden;
-  z-index: 1;
 }
 
 #particles-js {
